@@ -6,6 +6,7 @@ var engine, world;
 var box1, pig1;
 var backgroundImg,platform;
 
+
 function preload() {
     backgroundImg = loadImage("sprites/bg.png");
 }
@@ -17,7 +18,7 @@ function setup(){
 
 
     ground = new Ground(600,height,1200,20);
-    platform = new Ground(150, 305, 300, 170);
+    platform = new Ground(150, 315, 300, 170);
 
     box1 = new Box(700,320,70,70);
     box2 = new Box(920,320,70,70);
@@ -26,6 +27,7 @@ function setup(){
 
     box3 = new Box(700,240,70,70);
     box4 = new Box(920,240,70,70);
+    box6 = new Box(810,240,70,70);
     pig3 = new Pig(810, 220);
 
     log3 =  new Log(810,180,300, PI/2);
@@ -56,6 +58,7 @@ function draw(){
     log3.display();
 
     box5.display();
+    box6.display();
     log4.display();
     log5.display();
 
